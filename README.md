@@ -57,7 +57,7 @@ eval "`fnm env --multi --use-on-cd`"
 fnm install 12 && fnm default `fnm ls | grep v12 | tail -1 | cut -c4-`
 ```
 
-### Ruby & Bundler via rbenv
+#### Ruby & Bundler via rbenv
 
 ```console
 brew install rbenv
