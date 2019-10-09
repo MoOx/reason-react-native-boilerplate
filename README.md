@@ -1,11 +1,11 @@
-# react-native-boilerplate
+# react-native-boilerplate
 
-## Installation
+## Installation
 
 Before installing the project, you have to verify that you have on you machine
 all requirements
 
-### Requirements
+### Requirements
 
 Please be sure to have installed:
 
@@ -26,7 +26,7 @@ Optionally but highly recommended:
   need to (see [.node-version](.node-version))
 - Use [`rbenv`](https://github.com/rbenv/rbenv) or [`rvm`](http://rvm.io) to use the Ruby version required (see [.ruby-version](.ruby-version))
 
-### macOS
+### macOS
 
 If you are using macOS (_required for iOS development_), you can use
 [HomeBrew](https://brew.sh/) to easily get most of these requirements:
@@ -45,7 +45,7 @@ brew cask install android-studio
 
 Optionally
 
-#### Node via fnm
+#### Node via fnm
 
 ```console
 brew uninstall node
@@ -70,7 +70,7 @@ rbenv install 2.6.3 && rbenv global 2.6.3
 gem install bundle
 ```
 
-## Getting Started
+## Getting Started
 
 Clone the repo and install the dependencies
 
@@ -80,9 +80,9 @@ cd react-native-boilerplate
 yarn
 ```
 
-## Recommended IDE
+## Recommended IDE
 
-### Visual Studio Code
+### Visual Studio Code
 
 On macOS you can install VSCode using Homebrew:
 
@@ -93,7 +93,7 @@ brew cask install visual-studio-code
 Open it & you should get `code` CLI installed. Then you can install recommended
 extensions from the CLI.
 
-### Recommended Visual Studio Code Extensions
+### Recommended Visual Studio Code Extensions
 
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Flow Language Support](https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode)
@@ -111,9 +111,9 @@ code --install-extension msjsdiag.vscode-react-native
 code --install-extension mikestead.dotenv
 ```
 
-### Optional Debug Tools
+### Optional Debug Tools
 
-#### React Native Debugger
+#### React Native Debugger
 
 This tool contains React Inspector, Redux debbuger, and a light version of
 chrome devtools (console, sources, network...).
