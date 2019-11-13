@@ -1,4 +1,4 @@
-package com.reactnativeboilerplate;
+package com.reasonreactnativeboilerplate;
 
 import android.app.Application;
 import android.content.Context;

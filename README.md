@@ -1,4 +1,4 @@
-# react-native-boilerplate
+# reason-react-native-boilerplate
 
 ## Installation
 
@@ -75,8 +75,8 @@ gem install bundle
 Clone the repo and install the dependencies
 
 ```console
-git clone https://github.com/MoOx react-native-boilerplate.git
-cd react-native-boilerplate
+git clone https://github.com/MoOx/reason-react-native-boilerplate.git
+cd reason-react-native-boilerplate
 yarn
 ```
 
