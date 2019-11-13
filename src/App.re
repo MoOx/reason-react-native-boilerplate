@@ -17,27 +17,27 @@ type reactNativeNewAppScreenColors = {
   "dark": string,
 };
 
-[@bs.module "react-native/Libraries/NewAppScreen"]
-external colors: reactNativeNewAppScreenColors = "Colors";
+[@bs.module "./NewAppScreen/Colors"]
+external colors: reactNativeNewAppScreenColors = "default";
 
-[@bs.module "react-native/Libraries/Core/Devtools/openURLInBrowser"]
+[@bs.module "./NewAppScreen/openURLInBrowser"]
 external openURLInBrowser: string => unit = "default";
 
 module Header = {
-  [@react.component] [@bs.module "react-native/Libraries/NewAppScreen"]
-  external make: _ => React.element = "Header";
+  [@react.component] [@bs.module "./NewAppScreen/Header"]
+  external make: _ => React.element = "default";
 };
 module ReloadInstructions = {
-  [@react.component] [@bs.module "react-native/Libraries/NewAppScreen"]
-  external make: _ => React.element = "ReloadInstructions";
+  [@react.component] [@bs.module "./NewAppScreen/ReloadInstructions"]
+  external make: _ => React.element = "default";
 };
 module LearnMoreLinks = {
-  [@react.component] [@bs.module "react-native/Libraries/NewAppScreen"]
-  external make: _ => React.element = "LearnMoreLinks";
+  [@react.component] [@bs.module "./NewAppScreen/LearnMoreLinks"]
+  external make: _ => React.element = "default";
 };
 module DebugInstructions = {
-  [@react.component] [@bs.module "react-native/Libraries/NewAppScreen"]
-  external make: _ => React.element = "DebugInstructions";
+  [@react.component] [@bs.module "./NewAppScreen/DebugInstructions"]
+  external make: _ => React.element = "default";
 };
 
 /*
