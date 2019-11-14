@@ -1,5 +1,11 @@
 # reason-react-native-boilerplate
 
+> Reason React Native (+Web) template
+
+🎉 Made during the Youtube show [How To React with Reason](https://www.youtube.com/playlist?list=PLUzgQ3V9t75PG3JtrJ6fq-3wwXVQILPyR)!
+
+![Hello World Preview](preview.jpg)
+
 ## Installation
 
 Before installing the project, you have to verify that you have on you machine
