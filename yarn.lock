@@ -9958,10 +9958,10 @@ realpath-native@^1.1.0:
   dependencies:
     util.promisify "^1.0.0"
 
-reason-react-native@^0.60.1:
-  version "0.60.1"
-  resolved "https://registry.yarnpkg.com/reason-react-native/-/reason-react-native-0.60.1.tgz#eb60dbed6a85ffc4805c08ab4d6a0b551c132c7f"
-  integrity sha512-XJJqG62LW9j7YstzAsD20S8t1kH3uVu19/PT5NByceCACq/8oClBLsFXHXhlPvVvdgKvydGjQo+mNb+JCoJ2Kw==
+reason-react-native@^0.61.0:
+  version "0.61.0"
+  resolved "https://registry.yarnpkg.com/reason-react-native/-/reason-react-native-0.61.0.tgz#61579b309305b03c4cc7f44e9b6f2be3603474b4"
+  integrity sha512-HBkbeNFpIsyMZw0jj0YutX1RsujRfwhAtcxxN5tK9W8lClUedaUxzi5pIqmf6XsE02/23TOWh9tNXS0ltM8S2A==
 
 reason-react@^0.7.0:
   version "0.7.0"
