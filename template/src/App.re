@@ -53,12 +53,18 @@ let styles =
       "scrollView": style(~backgroundColor=colors##lighter, ()),
       "engine": style(~position=`absolute, ~right=0.->dp, ()),
       "sectionContainer":
-        style(~marginTop=32.->dp, ~paddingHorizontal=24.->dp, ()),
+        style(
+          ~marginTop=32.->dp,
+          ~paddingHorizontal=24.->dp,
+          ~justifyContent=`center,
+          ~alignItems=`center,
+          (),
+        ),
       "sectionTitle":
         style(~fontSize=24., ~fontWeight=`_600, ~color=colors##black, ()),
       "sectionDescription":
         style(
-          ~marginTop=8.->dp,
+          ~paddingVertical=20.->dp,
           ~fontSize=18.,
           ~fontWeight=`_400,
           ~color=colors##dark,
@@ -130,43 +136,47 @@ let app = () => {
               style(~width=windowDimensions##width->dp, ()),
             |])
           )>
-          <Text style={styles##sectionTitle}>
-            "Learn More"->React.string
-          </Text>
-          <Text style={styles##sectionDescription}>
-            "Read the docs to discover what to do next:"->React.string
-          </Text>
-          <Text style={styles##sectionDescription}>
-            <Text style={styles##highlight}>
-              "Reason React Native"->React.string
+          <ScrollView stickyHeaderIndices=[|0|]>
+            <View style=Style.(style(~backgroundColor=colors##lighter, ()))>
+              <Text style={styles##sectionTitle}>
+                "Learn More"->React.string
+              </Text>
+              <Text style={styles##sectionDescription}>
+                "Read the docs to discover what to do next:"->React.string
+              </Text>
+            </View>
+            <Text style={styles##sectionDescription}>
+              <Text style={styles##highlight}>
+                "Reason React Native"->React.string
+              </Text>
             </Text>
-          </Text>
-          <TouchableOpacity
-            onPress={_ =>
-              openURLInBrowser(
-                "https://reasonml-community.github.io/reason-react-native/en/docs/",
-              )
-            }>
-            <Text
-              style=Style.(
-                style(
-                  ~marginTop=8.->dp,
-                  ~fontSize=18.,
-                  ~fontWeight=`_400,
-                  ~color=colors##primary,
-                  (),
+            <TouchableOpacity
+              onPress={_ =>
+                openURLInBrowser(
+                  "https://reasonml-community.github.io/reason-react-native/en/docs/",
                 )
-              )>
-              "https://reasonml-community.github.io/\nreason-react-native/"
-              ->React.string
+              }>
+              <Text
+                style=Style.(
+                  style(
+                    ~marginTop=8.->dp,
+                    ~fontSize=18.,
+                    ~fontWeight=`_400,
+                    ~color=colors##primary,
+                    (),
+                  )
+                )>
+                "https://reasonml-community.github.io/\nreason-react-native/"
+                ->React.string
+              </Text>
+            </TouchableOpacity>
+            <Text style={styles##sectionDescription}>
+              <Text style={styles##highlight}>
+                "React Native"->React.string
+              </Text>
             </Text>
-          </TouchableOpacity>
-          <Text style={styles##sectionDescription}>
-            <Text style={styles##highlight}>
-              "React Native"->React.string
-            </Text>
-          </Text>
-          <LearnMoreLinks />
+            <LearnMoreLinks />
+          </ScrollView>
         </View>
       </ScrollView>
     </SafeAreaView>
